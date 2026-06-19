@@ -8,7 +8,8 @@ public:
             {
                 ans=i;
             }
-            else{
+            else
+            {
                 break;
             }
         }
