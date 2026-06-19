@@ -1,36 +1,36 @@
 class Solution {
 public:
-    int bitwiseComplement(int x) {
+    int bitwiseComplement(int n) {
 
-        if(x == 0) return 1;
+        if(n == 0) return 1;
 
-        string binary = "";
+        string s = "";
 
-        while(x){
-            int rem = x % 2;
-            x /= 2;
-            binary.push_back(rem + '0');
+        while(n)
+        {
+            int rem = n % 2;
+            n /= 2;
+            s += rem + '0';
         }
 
-        int n = binary.size();
-
-        for(int i = 0; i < n; i++){
-            if(binary[i] == '1'){
-                binary[i] = '0';
+        for(int i = 0; i < s.size(); i++)
+        {
+            if(s[i] == '1')
+            {
+                s[i] = '0';
             }
-            else{
-                binary[i] = '1';
+            else
+            {
+                s[i] = '1';
             }
         }
 
         int ans = 0;
-        int k = 1;
 
-        for(int i = 0; i < n; i++){
-            if(binary[i] == '1'){
-                ans += k;
-            }
-            k *= 2;
+        // s is reversed binary, so convert directly
+        for(int i = s.size() - 1; i >= 0; i--)
+        {
+            ans = ans * 2 + (s[i] - '0');
         }
 
         return ans;
