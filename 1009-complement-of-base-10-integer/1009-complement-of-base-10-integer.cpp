@@ -26,11 +26,15 @@ public:
         }
 
         int ans = 0;
+        int k = 0;
 
-        // s is reversed binary, so convert directly
-        for(int i = s.size() - 1; i >= 0; i--)
+        for(int i = 0; i < s.size(); i++)
         {
-            ans = ans * 2 + (s[i] - '0');
+            if(s[i] == '1')
+            {
+                ans += pow(2, k);
+            }
+            k++;
         }
 
         return ans;
