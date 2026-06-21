@@ -12,24 +12,27 @@ public:
             {
                 one++;
             }
-            else if(nums[i]==2)
+            else
             {
                 two++;
             }
         }
-        int i=0;
-        while(zero--)
+        for(int i=0;i<nums.size();i++)
         {
-            nums[i++]=0;
+            if(zero>0)
+            {
+                nums[i]=0;
+                zero--;
+            }
+            else if(one>0)
+            {
+                nums[i]=1;
+                one--;
+            }
+            else
+            {
+                nums[i]=2;
+            }
         }
-        while(one--)
-        {
-            nums[i++]=1;
-        }
-        while(two--)
-        {
-            nums[i++]=2;
-        }
-
     }
 };
