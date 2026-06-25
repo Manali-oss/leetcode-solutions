@@ -6,19 +6,20 @@ public:
         {
             v.push_back(i+1);
         }
-        int i=0,j=0;
-        int ans=0;
+        int i=0,j=0,ans=0;
         while(k)
         {
-            if (i < arr.size() && v[j] == arr[i]) {
+            if(i<arr.size() && arr[i]==v[j])
+            {
                 i++;
                 j++;
-            } else {
-                ans = v[j];
+            }
+            else
+            {
+                ans=v[j];
                 k--;
                 j++;
             }
-            
         }
         return ans;
     }
