@@ -1,25 +1,16 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        int i=0,j=x;
         int ans=0;
-        while(i<=j)
+        for(int i=0;i<=x;i++)
         {
-            int mid=i+(j-i)/2;
-            long long s=1LL*mid*mid;
-            if(s==x)
+            if(1LL * i*i<=x)
             {
-                ans=mid;
-                break;
-            }
-            else if(s<x)
-            {
-                ans=mid;
-                i=mid+1;
+                ans=i;
             }
             else
             {
-                j=mid-1;
+                break;
             }
         }
         return ans;
