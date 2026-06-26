@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0007-reverse-integer) |
+| [0069-sqrtx](https://github.com/Manali-oss/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0231-power-of-two](https://github.com/Manali-oss/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/Manali-oss/leetcode-solutions/tree/master/0258-add-digits) |
 | [0509-fibonacci-number](https://github.com/Manali-oss/leetcode-solutions/tree/master/0509-fibonacci-number) |
@@ -44,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/Manali-oss/leetcode-solutions/tree/master/0035-search-insert-position) |
+| [0069-sqrtx](https://github.com/Manali-oss/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0704-binary-search](https://github.com/Manali-oss/leetcode-solutions/tree/master/0704-binary-search) |
 | [1539-kth-missing-positive-number](https://github.com/Manali-oss/leetcode-solutions/tree/master/1539-kth-missing-positive-number) |
 ## Simulation
