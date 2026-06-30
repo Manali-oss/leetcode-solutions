@@ -11,5 +11,4 @@ var createHelloWorld = function() {
 /**
  * const f = createHelloWorld();
  * f(); // "Hello World"
- * f({}, null, 42); // "Hello World"
  */
