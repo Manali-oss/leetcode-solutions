@@ -1,17 +1,29 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        int n=numbers.size();
-        unordered_map<int,int>m;
-        for(int i=0;i<n;i++)
-        {
-            int first=numbers[i];
-            int second=target-first;
-            if(m.find(second)!=m.end())
-            {
-                return {m[second]+1,i+1};
+
+        int n = numbers.size();
+
+        for(int i = 0; i < n-1; i++){
+            int start = i+1,end = n-1;
+
+            while(start <= end){
+
+                int mid = start + (end - start)/2;
+
+                if(numbers[i]+numbers[mid] == target){
+                    return {i+1,mid+1};
+                }
+                else{
+                    if(numbers[i]+numbers[mid] < target){
+                        start = mid+1;
+                    }
+                    else{
+                        end = mid-1;
+                    }
+                }
+
             }
-            m[first]=i;
         }
         return {};
     }
