@@ -15,7 +15,7 @@ public:
                 if(count<0)
                 {
                     count=0;
-                    n=nums[i];
+                    n=nums[i+1];
                 }
             }
         }
