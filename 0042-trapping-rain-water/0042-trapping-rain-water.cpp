@@ -16,20 +16,14 @@ public:
         for(int i=0;i<=index;i++)
         {
             left=max(left,height[i]);
-            if((min(left,right)-height[i])>=0)
-            {
-                sum+=(min(left,right)-height[i]);
-            }
+            sum+=(left-height[i]);
         }
         left=right;
         right=0;
         for(int i=n-1;i>index;i--)
         {
             right=max(right,height[i]);
-            if((min(left,right)-height[i])>=0)
-            {
-                sum+=(min(left,right)-height[i]);
-            }
+            sum+=(right-height[i]);
         }
         return sum;
     }
