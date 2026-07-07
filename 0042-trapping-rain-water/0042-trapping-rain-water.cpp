@@ -2,6 +2,7 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int n=height.size();
+        if(n==0)return 0;
         int right=0,index=0;
         for(int i=0;i<n;i++)
         {
