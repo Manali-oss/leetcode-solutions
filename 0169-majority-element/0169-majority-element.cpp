@@ -2,7 +2,7 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
         int n=nums.size();
-        int num=nums[0],count=0;
+        int num=nums[0],count=1;
         for(int i=1;i<n;i++)
         {
             if(num==nums[i])
