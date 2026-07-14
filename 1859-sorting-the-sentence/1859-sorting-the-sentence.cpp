@@ -1,31 +1,31 @@
 class Solution {
 public:
     string sortSentence(string s) {
-        vector<string> v(10);
+        vector<string> words(10);
+        string temp = "";
 
-        for (int i = 0; i < s.size();) {
-            string m = "";
-
-            while (i < s.size() && s[i] != ' ') {
-                m += s[i];
-                i++;
+        for (int i = 0; i < s.size(); i++) {
+            if (isdigit(s[i])) {
+                int pos = s[i] - '0';
+                words[pos] = temp;
+                temp = "";
             }
-
-            int pos = m[m.size() - 1] - '0';
-            m.pop_back();
-            v[pos] = m;
-
-            i++;
+            else if (s[i] == ' ') {
+                continue;
+            }
+            else {
+                temp += s[i];
+            }
         }
 
         string ans = "";
 
         for (int i = 1; i < 10; i++) {
-            if (v[i] != "") {
+            if (words[i] != "") {
                 if (ans != "") {
                     ans += " ";
                 }
-                ans += v[i];
+                ans += words[i];
             }
         }
 
