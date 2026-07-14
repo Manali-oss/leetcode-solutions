@@ -27,6 +27,10 @@ public:
                 }
                 ans += words[i];
             }
+            else
+            {
+                break;
+            }
         }
 
         return ans;
