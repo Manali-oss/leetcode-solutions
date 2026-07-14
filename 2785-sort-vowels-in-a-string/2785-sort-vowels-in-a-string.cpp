@@ -1,24 +1,54 @@
 class Solution {
 public:
     string sortVowels(string s) {
-        string temp="";
-        for(int i=0;i<s.size();i++)
+        vector<int> up(26, 0);
+        vector<int> low(26, 0);
+
+        // Count frequencies
+        for (int i = 0; i < s.size(); i++)
         {
-            if(s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'||s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+            if (s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U')
             {
-                temp+=s[i];
+                up[s[i]-'A']++;
+            }
+            if (s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+            {
+                low[s[i]-'a']++;
             }
         }
-        sort(temp.begin(),temp.end());
-        int k=0;
-        for(int i=0;i<s.size();i++)
+
+        // Order of vowels
+        vector<int> pos = {0, 4, 8, 14, 20};
+
+        int u = 0, l = 0;
+
+        // Replace vowels
+        for (int i = 0; i < s.size(); i++)
         {
-            if(s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'||s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+            if (s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'||
+                s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
             {
-                s[i]=temp[k];
-                k++;
+                // Find the smallest available uppercase vowel
+                while (u < 5 && up[pos[u]] == 0)
+                    u++;
+
+                if (u < 5)
+                {
+                    s[i] = char(pos[u] + 'A');
+                    up[pos[u]]--;
+                }
+                else
+                {
+                    // All uppercase vowels are used, now use lowercase
+                    while (l < 5 && low[pos[l]] == 0)
+                        l++;
+
+                    s[i] = char(pos[l] + 'a');
+                    low[pos[l]]--;
+                }
             }
         }
+
         return s;
     }
 };
