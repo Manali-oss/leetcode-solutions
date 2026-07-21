@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0007-reverse-integer) |
 | [0012-integer-to-roman](https://github.com/Manali-oss/leetcode-solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0069-sqrtx](https://github.com/Manali-oss/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0231-power-of-two](https://github.com/Manali-oss/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/Manali-oss/leetcode-solutions/tree/master/0258-add-digits) |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Manali-oss/leetcode-solutions/tree/master/0001-two-sum) |
 | [0012-integer-to-roman](https://github.com/Manali-oss/leetcode-solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0169-majority-element](https://github.com/Manali-oss/leetcode-solutions/tree/master/0169-majority-element) |
 | [0349-intersection-of-two-arrays](https://github.com/Manali-oss/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0409-longest-palindrome](https://github.com/Manali-oss/leetcode-solutions/tree/master/0409-longest-palindrome) |
@@ -143,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0012-integer-to-roman](https://github.com/Manali-oss/leetcode-solutions/tree/master/0012-integer-to-roman) |
+| [0013-roman-to-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0409-longest-palindrome](https://github.com/Manali-oss/leetcode-solutions/tree/master/0409-longest-palindrome) |
 | [0415-add-strings](https://github.com/Manali-oss/leetcode-solutions/tree/master/0415-add-strings) |
 | [1108-defanging-an-ip-address](https://github.com/Manali-oss/leetcode-solutions/tree/master/1108-defanging-an-ip-address) |
