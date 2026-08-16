@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Manali-oss/leetcode-solutions/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Manali-oss/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 ## Monotonic Stack
 |  |
@@ -146,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0012-integer-to-roman](https://github.com/Manali-oss/leetcode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Manali-oss/leetcode-solutions/tree/master/0013-roman-to-integer) |
+| [0020-valid-parentheses](https://github.com/Manali-oss/leetcode-solutions/tree/master/0020-valid-parentheses) |
 | [0409-longest-palindrome](https://github.com/Manali-oss/leetcode-solutions/tree/master/0409-longest-palindrome) |
 | [0415-add-strings](https://github.com/Manali-oss/leetcode-solutions/tree/master/0415-add-strings) |
 | [1108-defanging-an-ip-address](https://github.com/Manali-oss/leetcode-solutions/tree/master/1108-defanging-an-ip-address) |
@@ -170,4 +172,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1661-average-time-of-process-per-machine](https://github.com/Manali-oss/leetcode-solutions/tree/master/1661-average-time-of-process-per-machine) |
 | [1683-invalid-tweets](https://github.com/Manali-oss/leetcode-solutions/tree/master/1683-invalid-tweets) |
 | [1757-recyclable-and-low-fat-products](https://github.com/Manali-oss/leetcode-solutions/tree/master/1757-recyclable-and-low-fat-products) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Manali-oss/leetcode-solutions/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
